@@ -1,0 +1,68 @@
+.buyPage {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid #015ba4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.buyBook {
+  color: #00adbb;
+}
+
+.bookInvoice {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.bookInvoice h2 {
+  color: #015ba4;
+}
+
+.table {
+  border: 1px solid #00adbb;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 10px;
+  margin: 15px 0px;
+  padding: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.col-section,
+.row-section {
+  display: flex;
+}
+
+.col-section > div {
+  flex: 1;
+}
+
+.row-section > div {
+  flex: 1;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #015ba4;
+}
+
+.paymentBTN {
+  padding: 10px;
+  width: 20%;
+  border: none;
+  background-color: #00adbb;
+  color: #fff;
+  border-radius: 5px;
+  align-self: center;
+  margin: 25px 10px;
+  cursor: pointer;
+}

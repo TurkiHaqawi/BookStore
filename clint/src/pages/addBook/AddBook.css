@@ -1,0 +1,60 @@
+.addBook {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.bookForm {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+
+label {
+  font-size: 20px;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+textarea {
+  height: 200px;
+}
+
+.username {
+  outline: none;
+  pointer-events: none;
+  background-color: rgb(210 187 187 / 44%);
+}
+
+img {
+  width: 40%;
+  height: 310px;
+  object-fit: cover;
+}
+
+.btnBook {
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #015ba4;
+  border-radius: 5px;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+.inputFiel {
+  cursor: pointer;
+}
+
+.fa-plus {
+  margin-right: 5px;
+}
