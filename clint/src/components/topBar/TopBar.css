@@ -35,3 +35,10 @@
   margin-left: 20px;
   cursor: pointer;
 }
+
+
+@media (max-width: 550px){
+  .topLeft {
+    display: none;
+  }
+}

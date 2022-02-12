@@ -107,3 +107,9 @@ form .label_name::after {
 }
 
 /* https://acc.satr.codes/static/media/landingBg.b860ff1f.svg */
+
+@media (max-width: 767px){
+  .imgSection {
+    display: none;
+  }
+}

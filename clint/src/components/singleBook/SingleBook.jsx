@@ -10,7 +10,7 @@ import Loading from '../loading/Loading'
 
 function SingleBook() {
 
-    const FP = "http://localhost:5000/images/"
+    const FP = "http://localhost:8080/images/"
 
     const location = useLocation()
     const path = location.pathname.split("/")[2]
