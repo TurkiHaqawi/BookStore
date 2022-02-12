@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 function Book({book}) {
 
-    const FP = "http://localhost:8080/images/"
+    const FP = "https://book-store-appp.herokuapp.com/images/"
     return (
         <div className="book">
             <img src={FP + book.bookPhoto} alt="" className="bookImg" />
