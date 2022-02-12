@@ -5,7 +5,7 @@ import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Single from "./pages/single/Single";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Context } from "./context/Context";
 import axios from "axios";
 import BuyPage from "./pages/buyPage/BuyPage";
@@ -28,20 +28,15 @@ function App() {
   return (
     <Router>
       <TopBar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {<Route path="/addBook" element={user ? <AddBook /> : <Register />} />}
+        <Route path="/login" element={user ? <Home /> : <Login />} />
+        <Route path="/register" element={user ? <Home /> : <Register />} />
+        <Route path="/buyPage" element={user ? <BuyPage /> : <Login />} />
 
-        {<Route path="/addBook"> {user ? <AddBook /> : <Register />} </Route>}
-        <Route path="/login"> {user ? <Home /> : <Login />} </Route>
-        <Route path="/register"> {user ? <Home /> : <Register />} </Route>
-        <Route path="/buyPage"> {user ? <BuyPage /> : <Login />} </Route>
-
-        <Route path="/book/:bookId">
-          <Single />
-        </Route>
-      </Switch>
+        <Route path="/book/:bookId" element={<Single />} />
+      </Routes>
     </Router>
   );
 }
