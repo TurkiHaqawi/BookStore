@@ -38,9 +38,9 @@ app.post("/api/upload", upload.single("file"), (req, res, next) => {
 app.use("/api/auth/", authRouter);
 app.use("/api/books/", bookRouter);
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "clint/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "clint/build/index.html"));
+// });
 
 app.listen(PORT, () => {
   console.log("server is running");
