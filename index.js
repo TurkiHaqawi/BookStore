@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static("clint/build"));
 app.use("/images", express.static(path.join(__dirname, "/images")));
+app.use(express.static(path.join(__dirname, 'public')));
 
 mongoose
   .connect(process.env.MANGO_URL)
